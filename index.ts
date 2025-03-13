@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import express, { Request, Response, Express } from "express";
 
 const app: Express = express();
@@ -8,5 +9,5 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`SErver is running at ${port}`);
 });
